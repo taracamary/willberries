@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.header {
+    padding: 15px 0;
+}
+
+.logo {
+    &__img {
+        width: 128px;
+    }
+}
+
+.nav {
+    &__item {
+        list-style-type: none;
+    }
+    
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #939699;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4592FF;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider {
+    &__label {
+        background-color: #3DC47E;
+        border-radius: 3px;
+        padding: 5px 12px;
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    &__item {
+        padding: 90px 0 110px;
+
+        &--1 {
+            background-color: #B4D1E0;
+            background: url('../img/slide-1.png') no-repeat center right 25% #B4D1E0; // по вертикали по центру, по горизонтали справа с отступом в 25%
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 70px;
+        color: #262D33;
+        font-family: 'Roboto Slab', sans-serif;
+        margin: 20px 0 15px;
+    }
+
+    &__desc {
+        font-size: 18px;
+        line-height: 30px;
+        color: #4B5157;
+        max-width: 335px;
+        margin-bottom: 40px;
+    }
+}
