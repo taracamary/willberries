@@ -14,28 +14,6 @@ button {
   cursor: pointer;
 }
 
-.header {
-  padding: 15px 0;
-}
-
-.logo__img {
-  width: 128px;
-}
-
-.nav__item {
-  list-style-type: none;
-}
-.nav__link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #939699;
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-}
-
 .button {
   padding: 10px 20px;
   background-color: #4592FF;
@@ -59,6 +37,28 @@ button {
   color: #ffffff;
   font-size: 12px;
   line-height: 15px;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.logo__img {
+  width: 128px;
+}
+
+.nav__item {
+  list-style-type: none;
+}
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #939699;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
 }
 
 .slider {
