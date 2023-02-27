@@ -11,6 +11,7 @@ body {
 button {
     border: none;
     background: none;
+    cursor: pointer;
 }
 
 .header {
@@ -57,22 +58,31 @@ button {
     gap: 10px;
 }
 
+.label {
+    background-color: #3DC47E;
+    border-radius: 3px;
+    padding: 5px 12px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 15px;
+}
+
 .slider {
-    &__label {
-        background-color: #3DC47E;
-        border-radius: 3px;
-        padding: 5px 12px;
-        color: #ffffff;
-        font-size: 12px;
-        line-height: 15px;
+    position: relative;
+
+    &__nav {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
     }
-    
+
     &__item {
         padding: 90px 0 110px;
 
         &--1 {
             background-color: #B4D1E0;
-            background: url('../img/slide-1.png') no-repeat center right 25% #B4D1E0; // по вертикали по центру, по горизонтали справа с отступом в 25%
+            background: url('../img/slide-1.png') no-repeat center right 25% / contain #B4D1E0; // по вертикали по центру, по горизонтали справа с отступом в 25%
         }
     }
 
@@ -91,5 +101,81 @@ button {
         color: #4B5157;
         max-width: 335px;
         margin-bottom: 40px;
+    }
+}
+
+.card {
+    margin: 50px 0 70px;
+
+    &__wrapper {
+        min-height: 370px;
+        border-radius: 10px;
+        padding: 60px 46px 80px;
+
+        @for $i from 1 through 4 {
+            &--#{$i} {
+              background: url('../img/card-#{$i}.jpg') no-repeat center center / cover;
+            }
+          }
+
+        &--1 {
+            margin-bottom: 30px;
+        }
+
+        &--3 {
+            padding: 35px 46px 60px;
+
+            .label {
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+
+            .card__title {
+                margin-bottom: 20px;
+            }
+
+            .card__text {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__title {
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #262D33;
+        margin-bottom: 15px;
+        max-width: 220px;
+
+        &--white {
+            color: #FFFFFF;
+        }
+    }
+    
+    &__text {
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4B5157;
+        margin-bottom: 25px;
+        max-width: 175px;
+        
+        &--white {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        &--pink {
+            color: #FFC4C9;
+        }
+    }
+
+    &__price {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
     }
 }

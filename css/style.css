@@ -11,6 +11,7 @@ body {
 button {
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 .header {
@@ -51,7 +52,7 @@ button {
   gap: 10px;
 }
 
-.slider__label {
+.label {
   background-color: #3DC47E;
   border-radius: 3px;
   padding: 5px 12px;
@@ -59,12 +60,22 @@ button {
   font-size: 12px;
   line-height: 15px;
 }
+
+.slider {
+  position: relative;
+}
+.slider__nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .slider__item {
   padding: 90px 0 110px;
 }
 .slider__item--1 {
   background-color: #B4D1E0;
-  background: url("../img/slide-1.png") no-repeat center right 25% #B4D1E0;
+  background: url("../img/slide-1.png") no-repeat center right 25%/contain #B4D1E0;
 }
 .slider__title {
   font-weight: 700;
@@ -80,4 +91,74 @@ button {
   color: #4B5157;
   max-width: 335px;
   margin-bottom: 40px;
+}
+
+.card {
+  margin: 50px 0 70px;
+}
+.card__wrapper {
+  min-height: 370px;
+  border-radius: 10px;
+  padding: 60px 46px 80px;
+}
+.card__wrapper--1 {
+  background: url("../img/card-1.jpg") no-repeat center center/cover;
+}
+.card__wrapper--2 {
+  background: url("../img/card-2.jpg") no-repeat center center/cover;
+}
+.card__wrapper--3 {
+  background: url("../img/card-3.jpg") no-repeat center center/cover;
+}
+.card__wrapper--4 {
+  background: url("../img/card-4.jpg") no-repeat center center/cover;
+}
+.card__wrapper--1 {
+  margin-bottom: 30px;
+}
+.card__wrapper--3 {
+  padding: 35px 46px 60px;
+}
+.card__wrapper--3 .label {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.card__wrapper--3 .card__title {
+  margin-bottom: 20px;
+}
+.card__wrapper--3 .card__text {
+  margin-bottom: 40px;
+}
+.card__title {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+  margin-bottom: 15px;
+  max-width: 220px;
+}
+.card__title--white {
+  color: #FFFFFF;
+}
+.card__text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+  margin-bottom: 25px;
+  max-width: 175px;
+}
+.card__text--white {
+  color: rgba(255, 255, 255, 0.85);
+}
+.card__text--pink {
+  color: #FFC4C9;
+}
+.card__price {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
