@@ -179,3 +179,129 @@ button {
         color: #FFFFFF;
     }
 }
+
+.goods {
+    padding-bottom: 70px;
+
+    &__wrapper {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #262D33;
+        font-family: 'Roboto Slab', sans-serif;
+    }
+
+    &__link {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        color: #262D33;
+        text-decoration: none;
+    }
+
+    &__card {
+        position: relative;
+        padding: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .label {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+        }
+
+        &-img {
+            margin-bottom: 15px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 25px;
+            color: #262D33;
+            font-family: 'Roboto Slab', sans-serif;
+            margin-bottom: 5px;
+        }
+
+        &-desc {
+            font-size: 14px;
+            line-height: 20px;
+            color: #4B5157;
+            margin-bottom: 20px;
+        }
+
+        &-price {
+            font-size: 18px;
+            line-height: 30px;
+            color: #262D33;
+        }
+    }
+}
+
+.footer {
+    background-color: #8F79D4;
+
+    &__top {
+        padding: 45px 0;
+        // border-bottom: 1px solid #D8BFFF;
+    }
+
+    &__nav {
+        &-list {
+            display: flex;
+            gap: 40px;
+        }
+
+        &-item {
+            list-style-type: none;
+        }
+
+        &-link {
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        color: #E7D9FF;
+    }
+    
+    &__socials {
+        display: flex;
+        margin-left: 25px;
+        gap: 15px;
+
+        &-img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__hr {
+        width: 100%;
+        height: 1px;
+        background-color: #D8BFFF;
+        border: none;
+    }
+
+    &__bottom {
+        padding: 25px 0 35px;
+
+        &-partners {
+            display: flex;
+            gap: 25px;
+        }
+    }
+}
