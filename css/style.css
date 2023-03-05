@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -24,9 +25,15 @@ button {
   line-height: 20px;
   font-family: "Lato", sans-serif;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
@@ -68,7 +75,9 @@ button {
   position: absolute;
   width: 100%;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .slider__item {
   padding: 90px 0 110px;
@@ -186,10 +195,19 @@ button {
 .goods__card {
   position: relative;
   padding: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .goods__card .label {
   position: absolute;
@@ -217,6 +235,7 @@ button {
   font-size: 18px;
   line-height: 30px;
   color: #262D33;
+  font-weight: 900;
 }
 
 .footer {
@@ -226,6 +245,8 @@ button {
   padding: 45px 0;
 }
 .footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
@@ -245,6 +266,8 @@ button {
   color: #E7D9FF;
 }
 .footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 25px;
   gap: 15px;
@@ -263,6 +286,15 @@ button {
   padding: 25px 0 35px;
 }
 .footer__bottom-partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 25px;
+}
+.footer__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #D8BFFF;
+  margin-left: 15px;
 }/*# sourceMappingURL=style.css.map */
