@@ -75,9 +75,11 @@ button {
         width: 100%;
         top: 50%;
         transform: translateY(-50%);
+        z-index: 10;
     }
 
     &__item {
+        min-height: 564px;
         padding: 90px 0 110px;
 
         &--1 {
